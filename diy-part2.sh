@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #============================================================
 # https://github.com/P3TERX/Actions-OpenWrt
@@ -9,4 +10,11 @@
 #============================================================
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.3.3/g' package/base-files/files/bin/config_generate
+git clone https://github.com/jefferymvp/luci-app-koolproxyR.git package/luci-app-koolproxyR
+#git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+git clone https://github.com/beenbin/Lienol_Passwall.git package/passwall
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone -b master https://github.com/vernesong/OpenClash.git package/Openclash
+git clone https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
+git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
